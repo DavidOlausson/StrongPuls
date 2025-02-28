@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kom Igång - StrongPulse Fitness</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/start.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo">StrongPulse</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Hem</a>
+                <a href="start.html">Pass</a>
+                <a href="utrustning.html">Utrustning</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="start-hero">
+            <div class="container">
+                <h1>Din Träningsresa Börjar Nu</h1>
+                <p>Skapa din egen väg till en starkare och hälsosammare livsstil</p>
+            </div>
+        </section>
+
+        <section class="start-options container">
+            <div class="option membership">
+                <div class="option-icon">💪</div>
+                <h2>Välj Medlemskap</h2>
+                <p>Hitta det perfekta medlemskapet för dina mål</p>
+                <ul class="membership-benefits">
+                    <li>Träna när du vill - öppet dygnet runt</li>
+                    <li>Tillgång till alla gruppträningspass</li>
+                    <li>Personlig introduktion med instruktör</li>
+                    <li>Helt kostnadsfri parkering inomhus</li>
+                </ul>
+                <button id="membershipBtn" class="cta-button">Se Alternativ</button>
+            </div>
+            <div class="option trial">
+                <div class="option-icon">🎯</div>
+                <h2>Prova-På Pass</h2>
+                <p>Testa utan kostnad och hitta din träningsform</p>
+                <ul class="trial-benefits">
+                    <li>60 minuters introduktion till vår utrustning</li>
+                    <li>Personlig coachning av våra specialister</li>
+                    <li>Skräddarsydd träningsplan just för dig</li>
+                    <li>Ingen bindningstid till våra abonemang</li>
+                </ul>
+                <button id="trialBtn" class="cta-button">Boka Nu</button>
+            </div>
+        </section>
+
+        <section class="start-features container">
+            <h2>Vad Du Får Som Medlem</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Digital Träningsapp</h3>
+                    <p>Följ dina framsteg och boka pass direkt i mobilen</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Expertkunskap</h3>
+                    <p>Certifierade tränare som guidar dig rätt</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Stark Gemenskap</h3>
+                    <p>Bli del av en motiverande träningsgemenskap</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StrongPulse Fitness. Alla rättigheter reserverade.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/start.js"></script>
+</body>
+
+</html>
