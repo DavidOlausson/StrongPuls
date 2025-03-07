@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrongPulse Fitness - Utrustning & Lokaler</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/utrsutning.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo">StrongPulse</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Hem</a>
+                <a href="start.html">Pass</a>
+                <a href="utrustning.html">Utrustning</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="equipment-hero">
+            <div class="container">
+                <h1>Våra Lokaler & Utrustning</h1>
+                <p>Upptäck våra moderna faciliteter och toppklassig utrustning</p>
+            </div>
+        </section>
+
+        <section class="equipment-intro container">
+            <div class="intro-content">
+                <h2>Utforska StrongPulse</h2>
+                <p>På StrongPulse Fitness erbjuder vi det bästa inom träningsutrustning och specialdesignade
+                    träningsytor för att maximera din träningsupplevelse. Från cardio till styrketräning, från lugna
+                    yogastudios till intensiva funktionella träningsytor - vi har allt du behöver för att nå dina mål.
+                </p>
+            </div>
+        </section>
+
+        <section class="facility-categories container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-target="strength">Styrketräning</button>
+                <button class="tab-btn" data-target="cardio">Cardio</button>
+                <button class="tab-btn" data-target="functional">Funktionell Träning</button>
+                <button class="tab-btn" data-target="studios">Studios</button>
+                <button class="tab-btn" data-target="recovery">Återhämtning</button>
+            </div>
+
+            <div class="tab-content">
+
+                <div class="tab-pane active" id="strength">
+                    <div class="area-grid">
+                        <div class="area-card">
+                            <div class="area-image strength-free"></div>
+                            <div class="area-details">
+                                <h3>Fria Vikter</h3>
+                                <p>Omfattande utbud av hantlar, skivstänger och viktplattor för alla styrkenivåer.</p>
+                                <ul class="equipment-list">
+                                    <li>Hantlar 1-50kg</li>
+                                    <li>Olympiska skivstänger</li>
+                                    <li>Specialstänger</li>
+                                    <li>Bänkar & ställningar</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image strength-machines"></div>
+                            <div class="area-details">
+                                <h3>Styrkemaskiner</h3>
+                                <p>Moderna maskiner från ledande tillverkare för säker och effektiv styrketräning.</p>
+                                <ul class="equipment-list">
+                                    <li>Benpress & Hack Squat</li>
+                                    <li>Bröst- & ryggmaskiner</li>
+                                    <li>Isoleringsmaskiner</li>
+                                    <li>Kabelstationer</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image strength-power"></div>
+                            <div class="area-details">
+                                <h3>Powerlifting Område</h3>
+                                <p>Dedikerat område för tung styrketräning med specialiserad utrustning.</p>
+                                <ul class="equipment-list">
+                                    <li>Power racks</li>
+                                    <li>Plattformar</li>
+                                    <li>Competition bench</li>
+                                    <li>Bumper plates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane" id="cardio">
+                    <div class="area-grid">
+                        <div class="area-card">
+                            <div class="area-image cardio-running"></div>
+                            <div class="area-details">
+                                <h3>Löpband & Elliptiska</h3>
+                                <p>Toppmoderna löpband och elliptiska maskiner med inbyggda träningsprogram och skärmar.
+                                </p>
+                                <ul class="equipment-list">
+                                    <li>Löpband med stötdämpning</li>
+                                    <li>Lutningsalternativ upp till 15%</li>
+                                    <li>Elliptiska med variabel motstånd</li>
+                                    <li>Bluetooth-anslutning</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image cardio-bikes"></div>
+                            <div class="area-details">
+                                <h3>Motionscyklar</h3>
+                                <p>Olika typer av motionscyklar för varierad cardioträning.</p>
+                                <ul class="equipment-list">
+                                    <li>Upprätta cyklar</li>
+                                    <li>Liggande cyklar</li>
+                                    <li>Spinningcyklar</li>
+                                    <li>Air bikes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image cardio-rowing"></div>
+                            <div class="area-details">
+                                <h3>Roddmaskiner & Stegmaskiner</h3>
+                                <p>Effektiva konditionsmaskiner för helkroppsträning.</p>
+                                <ul class="equipment-list">
+                                    <li>Concept2 roddmaskiner</li>
+                                    <li>Vattenroddmaskiner</li>
+                                    <li>Stegmaskiner</li>
+                                    <li>Versa Climbers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane" id="functional">
+                    <div class="area-grid">
+                        <div class="area-card">
+                            <div class="area-image functional-zone"></div>
+                            <div class="area-details">
+                                <h3>Funktionell Träningsyta</h3>
+                                <p>Öppen yta med flexibel utrustning för dynamiska träningspass.</p>
+                                <ul class="equipment-list">
+                                    <li>Kettlebells & Medicinbollar</li>
+                                    <li>Battle ropes</li>
+                                    <li>Plyometriska boxar</li>
+                                    <li>Funktionella träningsställningar</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image functional-crossfit"></div>
+                            <div class="area-details">
+                                <h3>CrossFit & HIIT Område</h3>
+                                <p>Specialutrustat område för intensiva träningspass.</p>
+                                <ul class="equipment-list">
+                                    <li>Gymnastic rings</li>
+                                    <li>Wall balls & måltavlor</li>
+                                    <li>Assault bikes</li>
+                                    <li>Sleds & Sandbags</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image functional-trx"></div>
+                            <div class="area-details">
+                                <h3>TRX & Suspension</h3>
+                                <p>Tillgång till suspensionsträningsutrustning för kroppsviktsträning.</p>
+                                <ul class="equipment-list">
+                                    <li>TRX-ställningar</li>
+                                    <li>Suspensionsbands</li>
+                                    <li>Coretrainers</li>
+                                    <li>Balansplattor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane" id="studios">
+                    <div class="area-grid">
+                        <div class="area-card">
+                            <div class="area-image studios-group"></div>
+                            <div class="area-details">
+                                <h3>Gruppträningstudio</h3>
+                                <p>Rymlig studio för grupppass med all nödvändig utrustning.</p>
+                                <ul class="equipment-list">
+                                    <li>Step-up brädor</li>
+                                    <li>Viktstänger & vikter</li>
+                                    <li>Yogamattor</li>
+                                    <li>Professionellt ljudsystem</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image studios-spinning"></div>
+                            <div class="area-details">
+                                <h3>Spinningrum</h3>
+                                <p>Specialdesignat rum för intensiva spinningpass.</p>
+                                <ul class="equipment-list">
+                                    <li>Professionella spinningcyklar</li>
+                                    <li>Ljus- och ljudsystem</li>
+                                    <li>Monitorering av hjärtfrekvens</li>
+                                    <li>Klimatkontroll</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image studios-yoga"></div>
+                            <div class="area-details">
+                                <h3>Yoga & Mindfulness Studio</h3>
+                                <p>Lugn och rofylld studio för yoga och mindfulness-träning.</p>
+                                <ul class="equipment-list">
+                                    <li>Premium yogamattor</li>
+                                    <li>Yogablock & bälten</li>
+                                    <li>Bolsters & filtar</li>
+                                    <li>Dämpad belysning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane" id="recovery">
+                    <div class="area-grid">
+                        <div class="area-card">
+                            <div class="area-image recovery-sauna"></div>
+                            <div class="area-details">
+                                <h3>Bastu & Ångbad</h3>
+                                <p>Lyxiga värmebehandlingar för att främja återhämtning och avslappning.</p>
+                                <ul class="equipment-list">
+                                    <li>Finsk bastu</li>
+                                    <li>Infrarött basturum</li>
+                                    <li>Ångbad</li>
+                                    <li>Kalla duschar</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image recovery-stretch"></div>
+                            <div class="area-details">
+                                <h3>Stretch & Återhämtningsområde</h3>
+                                <p>Dedikerat utrymme för stretching och myofasciell frisättning.</p>
+                                <ul class="equipment-list">
+                                    <li>Foam rollers</li>
+                                    <li>Stretchmaskiner</li>
+                                    <li>Massageverktyg</li>
+                                    <li>Compression recovery boots</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="area-card">
+                            <div class="area-image recovery-lounge"></div>
+                            <div class="area-details">
+                                <h3>Återhämtningslounge</h3>
+                                <p>Bekväm lounge för avslappning efter träningen.</p>
+                                <ul class="equipment-list">
+                                    <li>Bekväma sittplatser</li>
+                                    <li>Smoothiebar</li>
+                                    <li>Proteinstation</li>
+                                    <li>Laddningsstationer</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section container">
+            <div class="cta-box">
+                <h2>Upplev våra faciliteter</h2>
+                <p>Boka en guidad rundtur och se alla våra träningsytor och utrustning på plats</p>
+                <a href="#kontakt" class="btn">Boka Rundtur</a>
+            </div>
+        </section>
+
+        <section class="equipment-faq container">
+            <h2>Vanliga Frågor om Våra Faciliteter</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Har ni personliga tränare som kan visa utrustningen?</h3>
+                    <p>Ja, alla nya medlemmar erbjuds en gratis introduktion med en personlig tränare som visar hur all
+                        utrustning fungerar och kan hjälpa till att utforma ett träningsprogram.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Behöver jag boka tid för att använda vissa områden?</h3>
+                    <p>De flesta områden är tillgängliga utan bokning, men gruppträningspass, vissa studioutrymmen och
+                        återhämtningsfaciliteter kan kräva förbokning via vår app.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Har ni åldersgränser för användning av utrustningen?</h3>
+                    <p>Medlemmar måste vara minst 16 år för att använda styrketräningsmaskiner och fria vikter. Ungdomar
+                        mellan 14-16 år är välkomna men måste träna tillsammans med en vuxen.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Har ni förvaringsskåp för personliga tillhörigheter?</h3>
+                    <p>Ja, vi erbjuder säkra förvaringsskåp i omklädningsrummen. Du kan antingen använda ditt eget lås
+                        eller hyra ett från receptionen.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 StrongPulse Fitness. Alla rättigheter reserverade.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/utrustning.js"></script>
+</body>
+
+</html>

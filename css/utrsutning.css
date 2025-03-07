@@ -1,0 +1,344 @@
+
+
+.equipment-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/gym_hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+    padding: 180px 0 100px;
+    margin-top: 60px;
+}
+
+.equipment-hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.equipment-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.equipment-intro {
+    text-align: center;
+    padding: 60px 0 40px;
+    background-color: #f4f4f4;
+}
+
+.equipment-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.facility-categories {
+    padding: 30px 0 80px;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    background-color: #f4f4f4;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.tab-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+
+.tab-content {
+    position: relative;
+    min-height: 400px;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.area-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.area-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.area-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.strength-free {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.strength-machines {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.strength-power {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.cardio-running {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.cardio-bikes {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.cardio-rowing {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.functional-zone {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.functional-crossfit {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.functional-trx {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.studios-group {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.studios-spinning {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.studios-yoga {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.recovery-sauna {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.recovery-stretch {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.recovery-lounge {
+    background-image: url('../img/gym_hero.jpg');
+}
+
+.area-details {
+    padding: 25px;
+}
+
+.area-details h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.area-details p {
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.equipment-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.equipment-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.equipment-list li:before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.equipment-list li:last-child {
+    border-bottom: none;
+}
+
+.cta-section {
+    padding: 40px 0 80px;
+    text-align: center;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cta-box h2 {
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+.cta-box p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-box .btn {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 14px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.cta-box .btn:hover {
+    background-color: #FF4757;
+    transform: scale(1.05);
+}
+
+.equipment-faq {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.equipment-faq h2 {
+    margin-bottom: 40px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.faq-item {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+}
+
+.faq-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.faq-item p {
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+
+@media (max-width: 1024px) {
+    .area-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipment-hero {
+        padding: 120px 0 60px;
+    }
+
+    .equipment-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .category-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .area-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cta-box {
+        padding: 30px 20px;
+    }
+
+    .cta-box h2 {
+        font-size: 1.8rem;
+    }
+}
