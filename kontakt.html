@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrongPulse Fitness - Kontakta Oss</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <div class="logo">StrongPulse</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Hem</a>
+                <a href="start.html">Pass</a>
+                <a href="utrustning.html">Utrustning</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Kontakta StrongPulse</h1>
+                <p>Har du frågor eller vill bli en del av vår gemenskap? Vi finns här för dig.</p>
+            </div>
+        </section>
+
+        <section class="about-section container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Om StrongPulse</h2>
+                    <p>StrongPulse Fitness grundades 2020 med visionen att skapa en träningsplats där alla känner sig
+                        välkomna, oavsett träningsnivå eller mål. Vi tror på kraften i en stark gemenskap och personlig
+                        utveckling genom träning.</p>
+                    <p>Vårt mål är att inspirera och stötta våra medlemmar att uppnå sina hälsomål genom att erbjuda
+                        förstklassig utrustning, professionell vägledning och en motiverande miljö.</p>
+                    <div class="mission-values">
+                        <div class="mission-box">
+                            <h3>Vår Mission</h3>
+                            <p>Att skapa en träningsupplevelse som förvandlar liv genom att kombinera modern utrustning,
+                                expertis och gemenskap.</p>
+                        </div>
+                        <div class="values-box">
+                            <h3>Våra Värderingar</h3>
+                            <ul>
+                                <li>Inkludering & Respekt</li>
+                                <li>Kvalitet & Innovation</li>
+                                <li>Hållbarhet & Balans</li>
+                                <li>Gemenskap & Stöttning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Placeholder for image -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info-section">
+            <div class="container">
+                <h2>Kontaktinformation</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon location-icon"></div>
+                        <h3>Besök Oss</h3>
+                        <p>Träningsgatan 123<br>123 45 Stockholm</p>
+                        <button class="map-toggle" data-target="map-view">Visa Karta</button>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon phone-icon"></div>
+                        <h3>Ring Oss</h3>
+                        <p>Tel: 08-123 45 67</p>
+                        <p>Öppettider för telefon:<br>Vardagar 08:00 - 20:00<br>Helger 10:00 - 18:00</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon email-icon"></div>
+                        <h3>Maila Oss</h3>
+                        <p>info@strongpulse.se</p>
+                        <p>Svarstid: Inom 24 timmar</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon hours-icon"></div>
+                        <h3>Öppettider</h3>
+                        <p>Måndag - Fredag: 05:00 - 23:00</p>
+                        <p>Lördag - Söndag: 07:00 - 22:00</p>
+                        <p>Helgdagar: 08:00 - 20:00</p>
+                    </div>
+                </div>
+
+                <div id="map-view" class="map-container hidden">
+                    <div class="map-content">
+                        <button class="close-map">&times;</button>
+                        <div class="map-placeholder">
+                            <img src="img/map.png" alt="Karta till StrongPulse Fitness" class="map-image">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section container">
+            <div class="form-container">
+                <h2>Skicka Ett Meddelande</h2>
+                <p>Har du frågor eller vill du boka en guidad rundtur? Fyll i formuläret nedan så återkommer vi till dig
+                    inom kort.</p>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Namn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-post</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefonnummer</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Ärende</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Välj ärende</option>
+                            <option value="membership">Medlemskap</option>
+                            <option value="tour">Guidad rundtur</option>
+                            <option value="training">Personlig träning</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Annat</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Meddelande</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Jag godkänner att StrongPulse hanterar mina personuppgifter enligt <a
+                                href="#">integritetspolicyn</a>.</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Skicka Meddelande</button>
+                </form>
+
+                <div id="formSuccess" class="form-success hidden">
+                    <div class="success-icon">✓</div>
+                    <h3>Tack för ditt meddelande!</h3>
+                    <p>Vi har mottagit ditt meddelande och återkommer så snart som möjligt.</p>
+                    <button class="reset-form">Skicka ett nytt meddelande</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section container">
+            <h2>Möt Vårt Team</h2>
+            <p class="team-intro">Vår professionella och engagerade personal finns här för att hjälpa dig på din
+                träningsresa.</p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image person1-image"></div>
+                    <h3>Gunfrid Sanktion</h3>
+                    <p class="member-title">Gym Manager</p>
+                    <p class="member-description">Med över 10 års erfarenhet inom fitnessbranschen leder Gunfrid vårt team
+                        med passion och expertis.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image person2-image"></div>
+                    <h3>Osman Pannben</h3>
+                    <p class="member-title">Huvudtränare</p>
+                    <p class="member-description">Osmans specialisering inom styrketräning och funktionell fitness gör
+                        honom till en ovärderlig tillgång för våra medlemmar.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image person3-image"></div>
+                    <h3>Machmed Havreboll</h3>
+                    <p class="member-title">Nutritionist</p>
+                    <p class="member-description">Machmed hjälper våra medlemmar att optimera sin kost för bästa möjliga
+                        träningsresultat och övergripande hälsa.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image person4-image"></div>
+                    <h3>Matilda Vattenkanna</h3>
+                    <p class="member-title">Medlemsansvarig</p>
+                    <p class="member-description">Matilda ser till att alla medlemmar får ett varmt välkomnande och den
+                        support de behöver under sin tid hos oss.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section container">
+            <h2>Vanliga Frågor</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Hur bokar jag en guidad rundtur?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Du kan boka en guidad rundtur genom att fylla i kontaktformuläret på denna sida, ringa oss på
+                            08-123 45 67 eller besöka vår reception under öppettiderna. Vi erbjuder rundturer alla dagar
+                            i veckan.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Hur blir jag medlem hos StrongPulse?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Du kan bli medlem genom att besöka vår anläggning och prata med vår medlemsansvarig, eller
+                            genom att registrera dig online på vår medlemssida. Vi erbjuder olika medlemskap baserat på
+                            dina behov och mål.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Kan jag prova innan jag blir medlem?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Absolut! Vi erbjuder ett gratis provpass för alla nya besökare. Du kan också köpa ett dagpass
+                            om du vill prova anläggningen under en längre tid innan du bestämmer dig för ett medlemskap.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Kan jag pausa mitt medlemskap?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Ja, du kan pausa ditt medlemskap upp till 3 månader per år. Kontakta vår medlemsansvarig för
+                            att arrangera detta. Vid längre uppehåll p.g.a. sjukdom eller andra särskilda
+                            omständigheter, kontakta oss för individuell lösning.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Erbjuder ni företagsavtal?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Ja, vi har specialanpassade företagsavtal som kan skräddarsys efter ert företags behov.
+                            Kontakta vår företagsansvarig på foretagsavtal@strongpulse.se för mer information och
+                            offert.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h2>Prenumerera på vårt nyhetsbrev</h2>
+                        <p>Få de senaste nyheterna, specialerbjudanden och träningstips direkt till din inkorg.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Din e-postadress" required>
+                            <button type="submit" class="btn">Prenumerera</button>
+                        </form>
+                        <p class="newsletter-note">Vi respekterar din integritet och delar aldrig dina uppgifter med
+                            tredje part.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>StrongPulse Fitness</h3>
+                    <p>Vi hjälper dig att uppnå dina träningsmål i en motiverande och välkomnande miljö.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Snabblänkar</h3>
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="start.html">Pass</a></li>
+                        <li><a href="utrustning.html">Utrustning</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Kontakta Oss</h3>
+                    <p>Träningsgatan 123, 123 45 Stockholm</p>
+                    <p>Tel: 08-123 45 67</p>
+                    <p>E-post: info@strongpulse.se</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StrongPulse Fitness. Alla rättigheter reserverade.</p>
+                <ul class="footer-legal">
+                    <li><a href="#">Integritetspolicy</a></li>
+                    <li><a href="#">Användarvillkor</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/kontakt.js"></script>
+</body>
+
+</html>
