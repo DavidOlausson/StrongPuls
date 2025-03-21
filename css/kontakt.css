@@ -1,6 +1,6 @@
 .contact-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url('../img/gym_hero.jpg');
+        url('../img/kontakt_hero.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -95,7 +95,7 @@
 }
 
 .about-image {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Gemenskap.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -452,7 +452,7 @@
 }
 
 .person4-image {
-    background-image: url('../img/cromo.jpg');
+    background-image: url('../img/Person4.jpg');
 }
 
 .team-member h3 {

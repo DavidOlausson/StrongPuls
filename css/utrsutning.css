@@ -2,7 +2,7 @@
 
 .equipment-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('../img/gym_hero.jpg');
+        url('../img/utrustning_hero.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -121,63 +121,63 @@
 }
 
 .strength-free {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Fria.png');
 }
 
 .strength-machines {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Styrke.png');
 }
 
 .strength-power {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Power.png');
 }
 
 .cardio-running {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Lop.jpg');
 }
 
 .cardio-bikes {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Cykel.jpg');
 }
 
 .cardio-rowing {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Rodd.jpg');
 }
 
 .functional-zone {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Funktionell.jpg');
 }
 
 .functional-crossfit {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/CrossFit.jpg');
 }
 
 .functional-trx {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/TRX.jpg');
 }
 
 .studios-group {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Grupp.jpg');
 }
 
 .studios-spinning {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Spin.jpg');
 }
 
 .studios-yoga {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Yoga.jpg');
 }
 
 .recovery-sauna {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Bastu.jpg');
 }
 
 .recovery-stretch {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Stretch.jpg');
 }
 
 .recovery-lounge {
-    background-image: url('../img/gym_hero.jpg');
+    background-image: url('../img/Ater.jpg');
 }
 
 .area-details {
