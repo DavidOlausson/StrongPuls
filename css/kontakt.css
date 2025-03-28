@@ -1,3 +1,4 @@
+/* Hero-sektion för kontaktsidan */
 .contact-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
         url('../img/kontakt_hero.jpg');
@@ -23,6 +24,7 @@
     margin-right: auto;
 }
 
+/* Om oss-sektion */
 .about-section {
     padding: 80px 0 60px;
     background-color: #f4f4f4;
@@ -47,6 +49,7 @@
     color: var(--secondary-color);
 }
 
+/* Mission och värderingar */
 .mission-values {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -83,6 +86,7 @@
     align-items: center;
 }
 
+/* Punktlista med anpassade punkter */
 .values-box li:before {
     content: "•";
     color: var(--accent-color);
@@ -94,6 +98,7 @@
     border-bottom: none;
 }
 
+/* Bildsektion */
 .about-image {
     background-image: url('../img/Gemenskap.jpg');
     background-size: cover;
@@ -103,6 +108,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Kontaktinformationssektion */
 .contact-info-section {
     padding: 70px 0;
     background-color: var(--white);
@@ -121,6 +127,7 @@
     gap: 30px;
 }
 
+/* Kontaktkort */
 .contact-card {
     background-color: #f9f9f9;
     padding: 30px 20px;
@@ -133,6 +140,7 @@
     transform: translateY(-5px);
 }
 
+/* Ikoner för kontaktkort */
 .contact-icon {
     width: 60px;
     height: 60px;
@@ -144,7 +152,7 @@
     background-color: var(--accent-color);
 }
 
-
+/* SVG-ikoner inbäddade som data-URI */
 .location-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/%3E%3C/svg%3E");
 }
@@ -173,6 +181,7 @@
     line-height: 1.6;
 }
 
+/* Kartknapp */
 .map-toggle {
     background-color: transparent;
     border: 2px solid var(--accent-color);
@@ -190,6 +199,7 @@
     color: var(--white);
 }
 
+/* Kartcontainer (modal) */
 .map-container {
     position: fixed;
     top: 0;
@@ -218,6 +228,7 @@
     object-fit: cover;
 }
 
+/* Stäng-knapp för karta */
 .close-map {
     position: absolute;
     top: 10px;
@@ -242,10 +253,12 @@
     background-color: #f4f4f4;
 }
 
+/* Klass för att dölja element */
 .hidden {
     display: none;
 }
 
+/* Kontaktformulär */
 .contact-form-section {
     padding: 70px 0;
     background-color: #f4f4f4;
@@ -282,6 +295,7 @@
     margin-bottom: 20px;
 }
 
+/* Gör vissa formulärfält bredare */
 .form-group:nth-last-child(3),
 .form-group:nth-last-child(2),
 .form-group:last-child {
@@ -314,6 +328,7 @@
     outline: none;
 }
 
+/* Checkbox-stilar */
 .form-checkbox {
     display: flex;
     align-items: flex-start;
@@ -335,6 +350,7 @@
     text-decoration: none;
 }
 
+/* Skicka-knapp */
 .submit-btn {
     background-color: var(--accent-color);
     color: var(--white);
@@ -353,6 +369,7 @@
     background-color: #FF4757;
 }
 
+/* Bekräftelsemeddelande efter formulärinsändning */
 .form-success {
     text-align: center;
 }
@@ -395,6 +412,7 @@
     background-color: var(--secondary-color);
 }
 
+/* Teamsektion */
 .team-section {
     padding: 70px 0;
     text-align: center;
@@ -417,6 +435,7 @@
     gap: 30px;
 }
 
+/* Teammedlemskort */
 .team-member {
     background-color: var(--white);
     border-radius: 10px;
@@ -429,6 +448,7 @@
     transform: translateY(-5px);
 }
 
+/* Profilbilder för teammedlemmar */
 .member-image {
     width: 150px;
     height: 150px;
@@ -473,6 +493,7 @@
     line-height: 1.6;
 }
 
+/* FAQ-accordion */
 .faq-section {
     padding: 70px 0;
     background-color: var(--white);
@@ -541,6 +562,7 @@
     background-color: #f0f0f0;
 }
 
+/* Nyhetsbrevssektion */
 .newsletter-section {
     padding: 70px 0;
     background-color: #f4f4f4;
@@ -593,10 +615,12 @@
     color: #777;
 }
 
+/* Felklass för formulär */
 .error {
     border-color: #e74c3c !important;
 }
 
+/* Responsiva anpassningar */
 @media (max-width: 992px) {
     .contact-grid {
         grid-template-columns: repeat(2, 1fr);

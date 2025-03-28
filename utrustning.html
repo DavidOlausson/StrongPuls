@@ -2,22 +2,28 @@
 <html lang="sv">
 
 <head>
+    <!-- Grundläggande sidinformation -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StrongPulse Fitness - Utrustning & Lokaler</title>
+    <!-- Länkar till CSS-filer -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/utrsutning.css">
+    <link rel="stylesheet" href="css/utrsutning.css"> <!-- Obs: Stavfel i filnamn? "utrustning.css"? -->
 </head>
 
 <body>
+    <!-- Sidhuvud med navigering -->
     <header>
         <div class="container nav">
+            <!-- Logotyp -->
             <div class="logo">StrongPulse</div>
+            <!-- Hamburger-meny för mobilanpassning -->
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+            <!-- Navigeringslänkar -->
             <nav class="nav-links">
                 <a href="index.html">Hem</a>
                 <a href="start.html">Pass</a>
@@ -28,6 +34,7 @@
     </header>
 
     <main>
+        <!-- Hjältesektion med rubrik och introduktion -->
         <section class="equipment-hero">
             <div class="container">
                 <h1>Våra Lokaler & Utrustning</h1>
@@ -35,6 +42,7 @@
             </div>
         </section>
 
+        <!-- Introduktionssektion om gymmet -->
         <section class="equipment-intro container">
             <div class="intro-content">
                 <h2>Utforska StrongPulse</h2>
@@ -45,7 +53,9 @@
             </div>
         </section>
 
+        <!-- Huvudsektion för utrustningskategorier med flikar -->
         <section class="facility-categories container">
+            <!-- Flikar för olika träningsområden -->
             <div class="category-tabs">
                 <button class="tab-btn active" data-target="strength">Styrketräning</button>
                 <button class="tab-btn" data-target="cardio">Cardio</button>
@@ -54,10 +64,13 @@
                 <button class="tab-btn" data-target="recovery">Återhämtning</button>
             </div>
 
+            <!-- Innehåll för varje flik -->
             <div class="tab-content">
 
+                <!-- STYRKETRÄNING -->
                 <div class="tab-pane active" id="strength">
                     <div class="area-grid">
+                        <!-- Kort för fria vikter -->
                         <div class="area-card">
                             <div class="area-image strength-free"></div>
                             <div class="area-details">
@@ -72,6 +85,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för styrkemaskiner -->
                         <div class="area-card">
                             <div class="area-image strength-machines"></div>
                             <div class="area-details">
@@ -86,6 +100,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för powerlifting -->
                         <div class="area-card">
                             <div class="area-image strength-power"></div>
                             <div class="area-details">
@@ -103,8 +118,10 @@
                 </div>
 
 
+                <!-- CARDIO -->
                 <div class="tab-pane" id="cardio">
                     <div class="area-grid">
+                        <!-- Kort för löpband och elliptiska maskiner -->
                         <div class="area-card">
                             <div class="area-image cardio-running"></div>
                             <div class="area-details">
@@ -120,6 +137,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för motionscyklar -->
                         <div class="area-card">
                             <div class="area-image cardio-bikes"></div>
                             <div class="area-details">
@@ -134,6 +152,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för roddmaskiner och stegmaskiner -->
                         <div class="area-card">
                             <div class="area-image cardio-rowing"></div>
                             <div class="area-details">
@@ -151,8 +170,10 @@
                 </div>
 
 
+                <!-- FUNKTIONELL TRÄNING -->
                 <div class="tab-pane" id="functional">
                     <div class="area-grid">
+                        <!-- Kort för funktionell träning -->
                         <div class="area-card">
                             <div class="area-image functional-zone"></div>
                             <div class="area-details">
@@ -167,6 +188,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för CrossFit & HIIT -->
                         <div class="area-card">
                             <div class="area-image functional-crossfit"></div>
                             <div class="area-details">
@@ -181,6 +203,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för TRX och suspensionsträning -->
                         <div class="area-card">
                             <div class="area-image functional-trx"></div>
                             <div class="area-details">
@@ -198,8 +221,10 @@
                 </div>
 
 
+                <!-- STUDIOS -->
                 <div class="tab-pane" id="studios">
                     <div class="area-grid">
+                        <!-- Kort för gruppträning -->
                         <div class="area-card">
                             <div class="area-image studios-group"></div>
                             <div class="area-details">
@@ -214,6 +239,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för spinning -->
                         <div class="area-card">
                             <div class="area-image studios-spinning"></div>
                             <div class="area-details">
@@ -228,6 +254,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för yoga -->
                         <div class="area-card">
                             <div class="area-image studios-yoga"></div>
                             <div class="area-details">
@@ -245,8 +272,10 @@
                 </div>
 
 
+                <!-- ÅTERHÄMTNING -->
                 <div class="tab-pane" id="recovery">
                     <div class="area-grid">
+                        <!-- Kort för bastu och ångbad -->
                         <div class="area-card">
                             <div class="area-image recovery-sauna"></div>
                             <div class="area-details">
@@ -261,6 +290,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för stretching -->
                         <div class="area-card">
                             <div class="area-image recovery-stretch"></div>
                             <div class="area-details">
@@ -275,6 +305,7 @@
                             </div>
                         </div>
 
+                        <!-- Kort för återhämtningslounge -->
                         <div class="area-card">
                             <div class="area-image recovery-lounge"></div>
                             <div class="area-details">
@@ -293,6 +324,7 @@
             </div>
         </section>
 
+        <!-- CTA-sektion för att boka rundtur -->
         <section class="cta-section container">
             <div class="cta-box">
                 <h2>Upplev våra faciliteter</h2>
@@ -301,24 +333,29 @@
             </div>
         </section>
 
+        <!-- FAQ-sektion -->
         <section class="equipment-faq container">
             <h2>Vanliga Frågor om Våra Faciliteter</h2>
             <div class="faq-grid">
+                <!-- FAQ-objekt 1 -->
                 <div class="faq-item">
                     <h3>Har ni personliga tränare som kan visa utrustningen?</h3>
                     <p>Ja, alla nya medlemmar erbjuds en gratis introduktion med en personlig tränare som visar hur all
                         utrustning fungerar och kan hjälpa till att utforma ett träningsprogram.</p>
                 </div>
+                <!-- FAQ-objekt 2 -->
                 <div class="faq-item">
                     <h3>Behöver jag boka tid för att använda vissa områden?</h3>
                     <p>De flesta områden är tillgängliga utan bokning, men gruppträningspass, vissa studioutrymmen och
                         återhämtningsfaciliteter kan kräva förbokning via vår app.</p>
                 </div>
+                <!-- FAQ-objekt 3 -->
                 <div class="faq-item">
                     <h3>Har ni åldersgränser för användning av utrustningen?</h3>
                     <p>Medlemmar måste vara minst 16 år för att använda styrketräningsmaskiner och fria vikter. Ungdomar
                         mellan 14-16 år är välkomna men måste träna tillsammans med en vuxen.</p>
                 </div>
+                <!-- FAQ-objekt 4 -->
                 <div class="faq-item">
                     <h3>Har ni förvaringsskåp för personliga tillhörigheter?</h3>
                     <p>Ja, vi erbjuder säkra förvaringsskåp i omklädningsrummen. Du kan antingen använda ditt eget lås
@@ -328,12 +365,15 @@
         </section>
     </main>
 
+    <!-- Sidfot -->
     <footer>
         <div class="container">
             <div class="footer-grid">
+                <!-- Om oss-sektion -->
                 <div class="footer-about">
                     <h3>StrongPulse Fitness</h3>
                     <p>Vi hjälper dig att uppnå dina träningsmål i en motiverande och välkomnande miljö.</p>
+                    <!-- Sociala medier-länkar -->
                     <div class="social-icons">
                         <a href="#" class="social-icon">FB</a>
                         <a href="#" class="social-icon">IG</a>
@@ -341,6 +381,7 @@
                         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="social-icon">YT</a>
                     </div>
                 </div>
+                <!-- Snabblänkar -->
                 <div class="footer-links">
                     <h3>Snabblänkar</h3>
                     <ul>
@@ -350,6 +391,7 @@
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
+                <!-- Kontaktinformation -->
                 <div class="footer-contact">
                     <h3>Kontakta Oss</h3>
                     <p>Träningsgatan 123, 123 45 Stockholm</p>
@@ -357,6 +399,7 @@
                     <p>E-post: info@strongpulse.se</p>
                 </div>
             </div>
+            <!-- Copyright och juridisk information -->
             <div class="footer-bottom">
                 <p>&copy; 2024 StrongPulse Fitness. Alla rättigheter reserverade.</p>
                 <ul class="footer-legal">
@@ -368,6 +411,7 @@
         </div>
     </footer>
 
+    <!-- JavaScript-filer -->
     <script src="js/script.js"></script>
     <script src="js/utrustning.js"></script>
 </body>

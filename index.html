@@ -2,22 +2,33 @@
 <html lang="sv">
 
 <head>
+    <!-- Grundläggande meta-taggar för teckenkodning och responsivitet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sidtitel -->
     <title>StrongPulse Fitness - Välkommen</title>
+
+    <!-- Länkar till CSS-filer -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+    <!-- Sidhuvud med navigering -->
     <header>
         <div class="container nav">
+            <!-- Logotyp -->
             <div class="logo">StrongPulse</div>
+
+            <!-- Hamburgarmeny för mobila enheter -->
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+
+            <!-- Huvudnavigering -->
             <nav class="nav-links">
                 <a href="index.html">Hem</a>
                 <a href="start.html">Pass</a>
@@ -28,14 +39,16 @@
     </header>
 
     <main>
+        <!-- Huvudsektion (hero) med rubrik och call-to-action -->
         <section id="hem" class="hero">
             <div class="container">
                 <h1>Förvandla Din Kropp</h1>
                 <p>Professionell träning, personlig utveckling</p>
-                <a href="start.html" class="btn">Börja Nu</a>
+                <a href="start.html" class="btn">Börja Nu</a> <!-- Knapp för att komma igång -->
             </div>
         </section>
 
+        <!-- Introduktionssektion om gymmet -->
         <section class="intro container">
             <div class="intro-content">
                 <h2>Varför StrongPulse?</h2>
@@ -44,17 +57,23 @@
             </div>
         </section>
 
+        <!-- Funktioner/fördelar med gymmet -->
         <section class="features container">
+            <!-- Funktion 1: Personlig träning -->
             <div class="feature">
-                <div class="feature-icon">🏋️</div>
+                <div class="feature-icon">🏋️</div> <!-- Emoji som ikon -->
                 <h3>Personlig Träning</h3>
                 <p>Skräddarsydda träningsprogram för dig</p>
             </div>
+
+            <!-- Funktion 2: Moderna faciliteter -->
             <div class="feature">
                 <div class="feature-icon">🌟</div>
                 <h3>Moderna Faciliteter</h3>
                 <p>Toppmodern utrustning och lokaler</p>
             </div>
+
+            <!-- Funktion 3: Gruppträning -->
             <div class="feature">
                 <div class="feature-icon">👥</div>
                 <h3>Gruppträning</h3>
@@ -62,13 +81,17 @@
             </div>
         </section>
 
+        <!-- Testimonials från medlemmar -->
         <section class="testimonials container">
             <h2>Vad Våra Medlemmar Säger</h2>
             <div class="testimonial-grid">
+                <!-- Testimonial 1 -->
                 <div class="testimonial">
                     <p>"StrongPulse förvandlade min träningsresa. Professionell personal och fantastisk gemenskap!"</p>
-                    <span>- Anna S.</span>
+                    <span>- Anna S.</span> <!-- Medlemsnamn -->
                 </div>
+
+                <!-- Testimonial 2 -->
                 <div class="testimonial">
                     <p>"Aldrig tidigare har jag känt mig så motiverad och stark. Tack StrongPulse!"</p>
                     <span>- Marcus K.</span>
@@ -77,19 +100,26 @@
         </section>
     </main>
 
+    <!-- Sidfot med kontaktinformation och länkar -->
     <footer>
         <div class="container">
             <div class="footer-grid">
+                <!-- Om oss-sektion -->
                 <div class="footer-about">
                     <h3>StrongPulse Fitness</h3>
                     <p>Vi hjälper dig att uppnå dina träningsmål i en motiverande och välkomnande miljö.</p>
+
+                    <!-- Sociala medier-ikoner -->
                     <div class="social-icons">
-                        <a href="#" class="social-icon">FB</a>
-                        <a href="#" class="social-icon">IG</a>
-                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">FB</a> <!-- Facebook -->
+                        <a href="#" class="social-icon">IG</a> <!-- Instagram -->
+                        <a href="#" class="social-icon">TW</a> <!-- Twitter -->
                         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="social-icon">YT</a>
+                        <!-- YouTube -->
                     </div>
                 </div>
+
+                <!-- Snabblänkar till andra sidor -->
                 <div class="footer-links">
                     <h3>Snabblänkar</h3>
                     <ul>
@@ -99,6 +129,8 @@
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
+
+                <!-- Kontaktinformation -->
                 <div class="footer-contact">
                     <h3>Kontakta Oss</h3>
                     <p>Träningsgatan 123, 123 45 Stockholm</p>
@@ -106,6 +138,8 @@
                     <p>E-post: info@strongpulse.se</p>
                 </div>
             </div>
+
+            <!-- Copyright och juridiska länkar -->
             <div class="footer-bottom">
                 <p>&copy; 2024 StrongPulse Fitness. Alla rättigheter reserverade.</p>
                 <ul class="footer-legal">
@@ -117,6 +151,7 @@
         </div>
     </footer>
 
+    <!-- JavaScript-fil för interaktivitet -->
     <script src="js/script.js"></script>
 </body>
 

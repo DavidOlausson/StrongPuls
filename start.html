@@ -2,22 +2,34 @@
 <html lang="sv">
 
 <head>
+    <!-- Grundläggande metadata och teckenuppsättning -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sidans titel -->
     <title>Kom Igång - StrongPulse Fitness</title>
+
+    <!-- Länk till globala stilmallar -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Specifika stilmallar för startsidan -->
     <link rel="stylesheet" href="css/start.css">
 </head>
 
 <body>
+    <!-- Sidhuvud med navigation -->
     <header>
         <div class="container nav">
+            <!-- Logotyp -->
             <div class="logo">StrongPulse</div>
+
+            <!-- Hamburger-meny för mobila enheter -->
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+
+            <!-- Navigationsmenyn -->
             <nav class="nav-links">
                 <a href="index.html">Hem</a>
                 <a href="start.html">Pass</a>
@@ -28,6 +40,7 @@
     </header>
 
     <main>
+        <!-- Hjälteavsnitt med välkomnande rubrik -->
         <section class="start-hero">
             <div class="container">
                 <h1>Din Träningsresa Börjar Nu</h1>
@@ -35,7 +48,9 @@
             </div>
         </section>
 
+        <!-- Avsnitt med medlemskaps- och provaalternativ -->
         <section class="start-options container">
+            <!-- Medlemskapsalternativ -->
             <div class="option membership">
                 <div class="option-icon">💪</div>
                 <h2>Välj Medlemskap</h2>
@@ -48,6 +63,8 @@
                 </ul>
                 <button id="membershipBtn" class="cta-button">Se Alternativ</button>
             </div>
+
+            <!-- Prova-på-alternativ -->
             <div class="option trial">
                 <div class="option-icon">🎯</div>
                 <h2>Prova-På Pass</h2>
@@ -62,6 +79,7 @@
             </div>
         </section>
 
+        <!-- Avsnitt som visar medlemsfördelar -->
         <section class="start-features container">
             <h2>Vad Du Får Som Medlem</h2>
             <div class="features-grid">
@@ -84,6 +102,7 @@
         </section>
     </main>
 
+    <!-- Modal för medlemskap och prova-på-bokning -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -91,12 +110,15 @@
         </div>
     </div>
 
+    <!-- Sidfot med kontaktinformation och länkar -->
     <footer>
         <div class="container">
+            <!-- Primär sidfotens innehåll -->
             <div class="footer-grid">
                 <div class="footer-about">
                     <h3>StrongPulse Fitness</h3>
                     <p>Vi hjälper dig att uppnå dina träningsmål i en motiverande och välkomnande miljö.</p>
+                    <!-- Sociala medier-ikoner -->
                     <div class="social-icons">
                         <a href="#" class="social-icon">FB</a>
                         <a href="#" class="social-icon">IG</a>
@@ -104,6 +126,7 @@
                         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="social-icon">YT</a>
                     </div>
                 </div>
+                <!-- Snabblänkar -->
                 <div class="footer-links">
                     <h3>Snabblänkar</h3>
                     <ul>
@@ -113,6 +136,7 @@
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
+                <!-- Kontaktinformation -->
                 <div class="footer-contact">
                     <h3>Kontakta Oss</h3>
                     <p>Träningsgatan 123, 123 45 Stockholm</p>
@@ -120,6 +144,7 @@
                     <p>E-post: info@strongpulse.se</p>
                 </div>
             </div>
+            <!-- Sidfotens botten med copyright och juridiska länkar -->
             <div class="footer-bottom">
                 <p>&copy; 2024 StrongPulse Fitness. Alla rättigheter reserverade.</p>
                 <ul class="footer-legal">
@@ -131,6 +156,7 @@
         </div>
     </footer>
 
+    <!-- JavaScript-filer -->
     <script src="js/script.js"></script>
     <script src="js/start.js"></script>
 </body>

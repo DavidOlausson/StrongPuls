@@ -2,22 +2,33 @@
 <html lang="sv">
 
 <head>
+    <!-- Grundläggande meta-taggar -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sidtitel -->
     <title>StrongPulse Fitness - Kontakta Oss</title>
+
+    <!-- Länkar till CSS-filer -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/kontakt.css">
 </head>
 
 <body>
+    <!-- Sidhuvud med navigering -->
     <header>
         <div class="container nav">
+            <!-- Logotyp -->
             <div class="logo">StrongPulse</div>
+
+            <!-- Hamburgarmeny för mobila enheter -->
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+
+            <!-- Huvudnavigering -->
             <nav class="nav-links">
                 <a href="index.html">Hem</a>
                 <a href="start.html">Pass</a>
@@ -28,6 +39,7 @@
     </header>
 
     <main>
+        <!-- Hero-sektion med rubrik och introduktion -->
         <section class="contact-hero">
             <div class="container">
                 <h1>Kontakta StrongPulse</h1>
@@ -35,6 +47,7 @@
             </div>
         </section>
 
+        <!-- Sektion om gymmet -->
         <section class="about-section container">
             <div class="about-grid">
                 <div class="about-content">
@@ -44,6 +57,8 @@
                         utveckling genom träning.</p>
                     <p>Vårt mål är att inspirera och stötta våra medlemmar att uppnå sina hälsomål genom att erbjuda
                         förstklassig utrustning, professionell vägledning och en motiverande miljö.</p>
+
+                    <!-- Mission och värderingar -->
                     <div class="mission-values">
                         <div class="mission-box">
                             <h3>Vår Mission</h3>
@@ -62,14 +77,17 @@
                     </div>
                 </div>
                 <div class="about-image">
+                    <!-- Bildplatshållare -->
                 </div>
             </div>
         </section>
 
+        <!-- Kontaktinformationssektion -->
         <section class="contact-info-section">
             <div class="container">
                 <h2>Kontaktinformation</h2>
                 <div class="contact-grid">
+                    <!-- Adresskort -->
                     <div class="contact-card">
                         <div class="contact-icon location-icon"></div>
                         <h3>Besök Oss</h3>
@@ -77,6 +95,7 @@
                         <button class="map-toggle" data-target="map-view">Visa Karta</button>
                     </div>
 
+                    <!-- Telefonkort -->
                     <div class="contact-card">
                         <div class="contact-icon phone-icon"></div>
                         <h3>Ring Oss</h3>
@@ -84,6 +103,7 @@
                         <p>Öppettider för telefon:<br>Vardagar 08:00 - 20:00<br>Helger 10:00 - 18:00</p>
                     </div>
 
+                    <!-- E-postkort -->
                     <div class="contact-card">
                         <div class="contact-icon email-icon"></div>
                         <h3>Maila Oss</h3>
@@ -91,6 +111,7 @@
                         <p>Svarstid: Inom 24 timmar</p>
                     </div>
 
+                    <!-- Öppettiderkort -->
                     <div class="contact-card">
                         <div class="contact-icon hours-icon"></div>
                         <h3>Öppettider</h3>
@@ -100,18 +121,19 @@
                     </div>
                 </div>
 
+                <!-- Karta (dold som standard) -->
                 <div id="map-view" class="map-container hidden">
                     <div class="map-content">
                         <button class="close-map">&times;</button>
                         <div class="map-placeholder">
                             <img src="img/map.png" alt="Karta till StrongPulse Fitness" class="map-image">
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Kontaktformulär -->
         <section class="contact-form-section container">
             <div class="form-container">
                 <h2>Skicka Ett Meddelande</h2>
@@ -119,21 +141,25 @@
                     inom kort.</p>
 
                 <form id="contactForm" class="contact-form">
+                    <!-- Namnfält -->
                     <div class="form-group">
                         <label for="name">Namn</label>
                         <input type="text" id="name" name="name" required>
                     </div>
 
+                    <!-- E-postfält -->
                     <div class="form-group">
                         <label for="email">E-post</label>
                         <input type="email" id="email" name="email" required>
                     </div>
 
+                    <!-- Telefonfält -->
                     <div class="form-group">
                         <label for="phone">Telefonnummer</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
 
+                    <!-- Ärendemeny -->
                     <div class="form-group">
                         <label for="subject">Ärende</label>
                         <select id="subject" name="subject" required>
@@ -146,20 +172,24 @@
                         </select>
                     </div>
 
+                    <!-- Meddelandefält -->
                     <div class="form-group">
                         <label for="message">Meddelande</label>
                         <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
 
+                    <!-- Samtyckesruta -->
                     <div class="form-group form-checkbox">
                         <input type="checkbox" id="consent" name="consent" required>
                         <label for="consent">Jag godkänner att StrongPulse hanterar mina personuppgifter enligt <a
                                 href="#">integritetspolicyn</a>.</label>
                     </div>
 
+                    <!-- Skicka-knapp -->
                     <button type="submit" class="submit-btn">Skicka Meddelande</button>
                 </form>
 
+                <!-- Bekräftelsemeddelande (dolt som standard) -->
                 <div id="formSuccess" class="form-success hidden">
                     <div class="success-icon">✓</div>
                     <h3>Tack för ditt meddelande!</h3>
@@ -169,20 +199,24 @@
             </div>
         </section>
 
+        <!-- Teamsektion -->
         <section class="team-section container">
             <h2>Möt Vårt Team</h2>
             <p class="team-intro">Vår professionella och engagerade personal finns här för att hjälpa dig på din
                 träningsresa.</p>
 
             <div class="team-grid">
+                <!-- Teammedlem 1 -->
                 <div class="team-member">
                     <div class="member-image person1-image"></div>
                     <h3>Gunfrid Sanktion</h3>
                     <p class="member-title">Gym Manager</p>
-                    <p class="member-description">Med över 10 års erfarenhet inom fitnessbranschen leder Gunfrid vårt team
+                    <p class="member-description">Med över 10 års erfarenhet inom fitnessbranschen leder Gunfrid vårt
+                        team
                         med passion och expertis.</p>
                 </div>
 
+                <!-- Teammedlem 2 -->
                 <div class="team-member">
                     <div class="member-image person2-image"></div>
                     <h3>Osman Pannben</h3>
@@ -191,6 +225,7 @@
                         honom till en ovärderlig tillgång för våra medlemmar.</p>
                 </div>
 
+                <!-- Teammedlem 3 -->
                 <div class="team-member">
                     <div class="member-image person3-image"></div>
                     <h3>Mahmed Havreboll</h3>
@@ -199,6 +234,7 @@
                         träningsresultat och övergripande hälsa.</p>
                 </div>
 
+                <!-- Teammedlem 4 -->
                 <div class="team-member">
                     <div class="member-image person4-image"></div>
                     <h3>Matilda Vattenkanna</h3>
@@ -209,9 +245,11 @@
             </div>
         </section>
 
+        <!-- FAQ-sektion med accordion -->
         <section class="faq-section container">
             <h2>Vanliga Frågor</h2>
             <div class="accordion">
+                <!-- FAQ-item 1 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <h3>Hur bokar jag en guidad rundtur?</h3>
@@ -224,6 +262,7 @@
                     </div>
                 </div>
 
+                <!-- FAQ-item 2 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <h3>Hur blir jag medlem hos StrongPulse?</h3>
@@ -236,6 +275,7 @@
                     </div>
                 </div>
 
+                <!-- FAQ-item 3 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <h3>Kan jag prova innan jag blir medlem?</h3>
@@ -248,6 +288,7 @@
                     </div>
                 </div>
 
+                <!-- FAQ-item 4 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <h3>Kan jag pausa mitt medlemskap?</h3>
@@ -260,6 +301,7 @@
                     </div>
                 </div>
 
+                <!-- FAQ-item 5 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <h3>Erbjuder ni företagsavtal?</h3>
@@ -274,6 +316,7 @@
             </div>
         </section>
 
+        <!-- Nyhetsbrevssektion -->
         <section class="newsletter-section">
             <div class="container">
                 <div class="newsletter-container">
@@ -292,9 +335,11 @@
         </section>
     </main>
 
+    <!-- Sidfot -->
     <footer>
         <div class="container">
             <div class="footer-grid">
+                <!-- Om oss-sektion -->
                 <div class="footer-about">
                     <h3>StrongPulse Fitness</h3>
                     <p>Vi hjälper dig att uppnå dina träningsmål i en motiverande och välkomnande miljö.</p>
@@ -305,6 +350,8 @@
                         <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="social-icon">YT</a>
                     </div>
                 </div>
+
+                <!-- Snabblänkar -->
                 <div class="footer-links">
                     <h3>Snabblänkar</h3>
                     <ul>
@@ -314,6 +361,8 @@
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
+
+                <!-- Kontaktinformation -->
                 <div class="footer-contact">
                     <h3>Kontakta Oss</h3>
                     <p>Träningsgatan 123, 123 45 Stockholm</p>
@@ -321,6 +370,8 @@
                     <p>E-post: info@strongpulse.se</p>
                 </div>
             </div>
+
+            <!-- Copyright och juridiska länkar -->
             <div class="footer-bottom">
                 <p>&copy; 2024 StrongPulse Fitness. Alla rättigheter reserverade.</p>
                 <ul class="footer-legal">
@@ -332,6 +383,7 @@
         </div>
     </footer>
 
+    <!-- JavaScript-filer -->
     <script src="js/script.js"></script>
     <script src="js/kontakt.js"></script>
 </body>

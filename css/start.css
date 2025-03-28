@@ -1,3 +1,4 @@
+/* Hjälteavsnitt med bakgrundsbild och dynamisk styling */
 .start-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url('../img/start_hero.jpg');
@@ -9,6 +10,7 @@
     margin-top: 60px;
 }
 
+/* Rubrikstorlek och formatering för hjälteavsnitt */
 .start-hero h1 {
     font-size: 3.2rem;
     margin-bottom: 20px;
@@ -21,6 +23,7 @@
     margin: 0 auto;
 }
 
+/* Grid-layout för medlemskaps- och provaalternativ */
 .start-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -30,6 +33,7 @@
     z-index: 2;
 }
 
+/* Grundstil för valmöjligheter (medlemskap och prova-på) */
 .option {
     background-color: var(--white);
     border-radius: 15px;
@@ -39,15 +43,18 @@
     transition: transform 0.3s ease;
 }
 
+/* Hover-effekt för valmöjligheter */
 .option:hover {
     transform: translateY(-10px);
 }
 
+/* Styling för alternativikoner */
 .option-icon {
     font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
+/* Formatering av förmånslistor */
 .membership-benefits,
 .trial-benefits {
     list-style: none;
@@ -62,6 +69,7 @@
     padding-left: 25px;
 }
 
+/* Checkmark-symbol för listpunkter */
 .membership-benefits li::before,
 .trial-benefits li::before {
     content: "✓";
@@ -72,6 +80,7 @@
     transform: translateY(-50%);
 }
 
+/* Utmärkande knappstil för call-to-action */
 .cta-button {
     background-color: var(--accent-color);
     color: var(--white);
@@ -83,11 +92,13 @@
     transition: all 0.3s ease;
 }
 
+/* Hover-effekt för CTA-knappen */
 .cta-button:hover {
     background-color: #FF4757;
     transform: scale(1.05);
 }
 
+/* Avsnitt för medlemsfördelar */
 .start-features {
     padding: 80px 0;
     text-align: center;
@@ -95,6 +106,7 @@
     margin-top: 60px;
 }
 
+/* Grid för presentationskort */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -102,6 +114,7 @@
     margin-top: 40px;
 }
 
+/* Stilar för enskilda presentationskort */
 .feature-card {
     background-color: var(--white);
     padding: 30px;
@@ -113,6 +126,7 @@
     transform: translateY(-5px);
 }
 
+/* Modal-styling för popup-fönster */
 .modal {
     display: none;
     position: fixed;
@@ -142,7 +156,10 @@
     cursor: pointer;
 }
 
+/* Responsiva designjusteringar för mobiltelefoner */
 @media (max-width: 768px) {
+
+    /* Hamburger-meny för mobila enheter */
     .hamburger {
         display: flex;
     }
@@ -168,15 +185,14 @@
     }
 }
 
-
-
+/* Responsiva justeringar för container */
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
     }
 }
 
-
+/* Responsiva justeringar för rubrik och logotyp */
 @media (max-width: 768px) {
     header {
         padding: 15px 0;
@@ -191,7 +207,7 @@
     }
 }
 
-
+/* Detaljerade navigationsstilar för mobila enheter */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -220,8 +236,10 @@
     }
 }
 
-
+/* Responsiva justeringar för olika sektioner */
 @media (max-width: 768px) {
+
+    /* Hero-sektion */
     .hero {
         padding: 120px 0 80px;
         margin-top: 56px;
@@ -241,10 +259,8 @@
         padding: 12px 25px;
         font-size: 1rem;
     }
-}
 
-
-@media (max-width: 768px) {
+    /* Introduktionssektion */
     .intro {
         padding: 40px 0;
     }
@@ -256,10 +272,8 @@
     .intro h2 {
         font-size: 1.8rem;
     }
-}
 
-
-@media (max-width: 768px) {
+    /* Funktioner */
     .features {
         flex-direction: column;
         padding: 40px 0;
@@ -273,10 +287,8 @@
     .feature-icon {
         font-size: 2.5rem;
     }
-}
 
-
-@media (max-width: 768px) {
+    /* Testimonials */
     .testimonials {
         padding: 40px 0;
     }
@@ -289,11 +301,8 @@
     .testimonial {
         padding: 20px;
     }
-}
 
-
-
-@media (max-width: 768px) {
+    /* Start-hero specifik mobil styling */
     .start-hero {
         padding: 100px 0 60px;
         margin-top: 56px;
@@ -309,6 +318,7 @@
         padding: 0 20px;
     }
 
+    /* Start-options för mobil */
     .start-options {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -330,6 +340,7 @@
         text-align: left;
     }
 
+    /* Start-features för mobil */
     .start-features {
         padding: 40px 0;
         margin-top: 30px;
@@ -345,13 +356,14 @@
         padding: 25px;
     }
 
-
+    /* Modal responsiv styling */
     .modal-content {
         margin: 5% auto;
         padding: 25px;
         width: 95%;
     }
 
+    /* Formulärelement responsiv styling */
     form {
         gap: 12px;
     }
@@ -364,7 +376,7 @@
     }
 }
 
-
+/* Responsiva justeringar för surfplattor */
 @media (min-width: 769px) and (max-width: 1024px) {
     .start-options {
         grid-template-columns: 1fr 1fr;
@@ -372,6 +384,18 @@
     }
 
     .features-grid {
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Justering av checkmarks för mobila enheter */
+@media (max-width: 768px) {
+
+    .membership-benefits li::before,
+    .trial-benefits li::before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
