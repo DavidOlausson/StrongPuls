@@ -7,13 +7,13 @@
     background-position: center;
     color: var(--white);
     text-align: center;
-    padding: 180px 0 100px;
+    padding: 120px 0 60px;
     margin-top: 60px;
 }
 
 /* Styling för huvudrubriken i hero-sektionen */
 .equipment-hero h1 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -108,8 +108,8 @@
 /* Responsiv grid för områdeskort */
 .area-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 /* Styling för områdeskort med skuggeffekt och hover-animation */
@@ -368,5 +368,21 @@
 
     .cta-box h2 {
         font-size: 1.8rem;
+    }
+}
+
+/* Media query for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    .equipment-hero {
+        padding: 180px 0 100px;
+    }
+
+    .equipment-hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .area-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 }

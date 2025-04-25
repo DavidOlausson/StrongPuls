@@ -36,8 +36,8 @@ header {
     width: 100%;
     z-index: 1000;
     top: 0;
+    padding: 15px 0;
     transition: all 0.3s ease;
-    padding: 20px 0;
 }
 
 /* Sidhuvud när sidan scrollas */
@@ -49,7 +49,7 @@ header.scrolled {
 /* Navigation med flexlayout */
 .nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -254,5 +254,17 @@ footer {
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+/* Media query for tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header {
+        padding: 20px 0;
     }
 }
