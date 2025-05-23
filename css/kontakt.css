@@ -625,16 +625,6 @@
     border-color: #e74c3c !important;
 }
 
-/* Responsiva anpassningar */
-@media (max-width: 992px) {
-    .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 
 /* Media query for tablets (min-width: 768px) */
