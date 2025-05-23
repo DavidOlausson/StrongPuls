@@ -66,14 +66,26 @@ header.scrolled .logo {
 
 /* Navigeringslänkar */
 .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.nav-links.active {
     display: flex;
-    gap: 25px;
 }
 
 .nav-links a {
     color: var(--white);
     text-decoration: none;
     font-weight: 300;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     transition: color 0.3s ease;
 }
 
@@ -83,7 +95,7 @@ header.scrolled .logo {
 
 /* Hamburgar-meny för mobila enheter */
 .hamburger {
-    display: none;
+    display: flex;
     flex-direction: column;
     cursor: pointer;
 }
@@ -122,8 +134,8 @@ footer {
 /* Grid för sidfotens layout */
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     padding: 50px 0 30px;
 }
 
@@ -193,15 +205,17 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* Juridiska länkar */
 .footer-legal {
     display: flex;
+    flex-direction: column;
     list-style: none;
-    gap: 20px;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .footer-legal a {
@@ -215,53 +229,46 @@ footer {
     color: var(--accent-color);
 }
 
-/* Media query för mobila enheter */
-@media (max-width: 768px) {
-
-    /* Visa hamburgar-meny */
-    .hamburger {
-        display: flex;
-    }
-
-    /* Dölj och visa navigeringslänkar */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: var(--primary-color);
-        text-align: center;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        padding: 15px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    /* Ändra sidfotens grid */
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    /* Centrera nedre delen av sidfoten */
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* Media query for tablets (min-width: 768px) */
+/* Anpassningar för tablets (min-width: 768px) */
 @media (min-width: 768px) {
     .nav {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        text-align: left;
+    }
+
+    .nav-links a {
+        padding: 0 15px;
+        border: none;
+    }
+
+    .hamburger {
+        display: none;
+        /* Dölj hamburgarmenyn på större skärmar */
+    }
+
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-legal {
+        flex-direction: row;
+        margin-top: 0;
     }
 
     header {

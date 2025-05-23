@@ -1,5 +1,4 @@
-/* Hero-sektion för utrustningssidan 
-   Skapar en mörk överlappande bakgrund med en bild */
+/* Hero-sektion för utrustningssidan */
 .equipment-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url('../img/utrustning_hero.jpg');
@@ -11,14 +10,12 @@
     margin-top: 60px;
 }
 
-/* Styling för huvudrubriken i hero-sektionen */
 .equipment-hero h1 {
     font-size: 2.2rem;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-/* Styling för brödtext i hero-sektionen */
 .equipment-hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -27,7 +24,7 @@
     margin-right: auto;
 }
 
-/* Introduktionssektion med centrerad text och ljusgrå bakgrund */
+/* Introduktionssektion */
 .equipment-intro {
     text-align: center;
     padding: 60px 0 40px;
@@ -39,12 +36,11 @@
     margin: 0 auto;
 }
 
-/* Container för kategoriflikar */
+/* Kategoriflikar */
 .facility-categories {
     padding: 30px 0 80px;
 }
 
-/* Flexbox för kategoriflikar med centrering och mellanrum */
 .category-tabs {
     display: flex;
     justify-content: center;
@@ -53,7 +49,6 @@
     margin-bottom: 30px;
 }
 
-/* Styling för kategoriflikarnas knappar */
 .tab-btn {
     background-color: #f4f4f4;
     border: 2px solid var(--primary-color);
@@ -65,31 +60,27 @@
     transition: all 0.3s ease;
 }
 
-/* Hover-effekt för kategoriknappar */
 .tab-btn:hover {
     background-color: var(--secondary-color);
     color: var(--white);
 }
 
-/* Styling för aktiv kategoriflik */
 .tab-btn.active {
     background-color: var(--primary-color);
     color: var(--white);
 }
 
-/* Container för flikinnehåll */
+/* Flikinnehåll */
 .tab-content {
     position: relative;
     min-height: 400px;
 }
 
-/* Styling för flikpaneler med fade-animering */
 .tab-pane {
     display: none;
     animation: fadeEffect 0.5s;
 }
 
-/* Keyframes för fade-effekt */
 @keyframes fadeEffect {
     from {
         opacity: 0;
@@ -100,19 +91,17 @@
     }
 }
 
-/* Visning av aktiv flikpanel */
 .tab-pane.active {
     display: block;
 }
 
-/* Responsiv grid för områdeskort */
+/* Grid för områdeskort */
 .area-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
-/* Styling för områdeskort med skuggeffekt och hover-animation */
 .area-card {
     background-color: var(--white);
     border-radius: 10px;
@@ -126,14 +115,13 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Styling för områdeskortens bilder */
 .area-image {
     height: 200px;
     background-size: cover;
     background-position: center;
 }
 
-/* Bakgrundsbilder för olika områden */
+/* Bakgrundsbilder för områden */
 .strength-free {
     background-image: url('../img/Fria.png');
 }
@@ -210,7 +198,7 @@
     color: var(--secondary-color);
 }
 
-/* Styling för utrustningslista */
+/* Utrustningslista */
 .equipment-list {
     list-style-type: none;
     padding: 0;
@@ -234,7 +222,7 @@
     border-bottom: none;
 }
 
-/* Call-to-action sektion med gradient bakgrund */
+/* Call-to-action sektion */
 .cta-section {
     padding: 40px 0 80px;
     text-align: center;
@@ -285,14 +273,12 @@
     margin-bottom: 40px;
 }
 
-/* Grid för FAQ-objekt */
 .faq-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
-/* Styling för FAQ-objekt */
 .faq-item {
     background-color: var(--white);
     padding: 25px;
@@ -317,61 +303,7 @@
     line-height: 1.6;
 }
 
-/* Responsiva mediaquerys för mindre skärmar */
-@media (max-width: 1024px) {
-
-    /* Ändra grid till två kolumner */
-    .area-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Ändra FAQ-grid till en kolumn */
-    .faq-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    /* Justera hero-sektionens storlek */
-    .equipment-hero {
-        padding: 120px 0 60px;
-    }
-
-    .equipment-hero h1 {
-        font-size: 2.2rem;
-    }
-
-    /* Ändra kategoriflikar till vertikal layout */
-    .category-tabs {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .tab-btn {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    /* Ändra områdeskort till en kolumn */
-    .area-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    /* Justera CTA-boxens storlek */
-    .cta-box {
-        padding: 30px 20px;
-    }
-
-    .cta-box h2 {
-        font-size: 1.8rem;
-    }
-}
-
-/* Media query for tablets (min-width: 768px) */
+/* Anpassningar för tablets och desktops */
 @media (min-width: 768px) {
     .equipment-hero {
         padding: 180px 0 100px;
@@ -381,8 +313,30 @@
         font-size: 3.2rem;
     }
 
+    .category-tabs {
+        flex-direction: row;
+    }
+
+    .tab-btn {
+        width: auto;
+    }
+
+    .area-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-box {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
     .area-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
     }
 }
